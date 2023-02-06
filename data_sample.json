@@ -1,0 +1,50 @@
+{
+    "tenancy": {
+        "address_line1": "1 Place de l'Opéra",
+        "address_line2": "75009 Paris",
+        "currency": "EUR"
+    },
+    "landlord": {
+        "first_name": "Alice",
+        "last_name": "Shaone",
+        "address_line1": "288 Campus Drive",
+        "address_line2": "Stanford, CA 94305, United States",
+        "editing_city": "Stanford"
+    },
+    "tenant": {
+        "first_name": "Bob",
+        "last_name": "Skein",
+        "title": "M.",
+        "address_line1": "41 Brattle St",
+        "address_line2": "Cambridge, MA 02138, United States"
+    },
+    "receipts": [
+        {
+            "year": 2022,
+            "month": 12,
+            "start_day": 15,
+            "end_day": 31,
+            "rent": 435,
+            "expanses": 60,
+            "payment_date": "2022-12-15"
+        },
+        {
+            "year": 2023,
+            "month": 1,
+            "start_day": 1,
+            "end_day": 31,
+            "rent": 870,
+            "expanses": 120,
+            "payment_date": "2023-01-03"
+        },
+        {
+            "year": 2023,
+            "month": 2,
+            "start_day": 1,
+            "end_day": 28,
+            "rent": 870,
+            "expanses": 190,
+            "payment_date": "2022-02-03"
+        }
+    ]
+}
