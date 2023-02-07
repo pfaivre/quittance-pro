@@ -1,10 +1,6 @@
-```
-          ╔══════════════════════════╗
-          ║                          ║
-          ║    Quittance Pro 2023    ║
-          ║                          ║
-          ╚══════════════════════════╝
-```
+<div align="center">
+<img src="docs/quittance-pro-banner.svg" alt="Quittance Pro 2023">
+</div>
 
 ## 1. Set-up and run
 
