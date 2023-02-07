@@ -13,4 +13,4 @@ source ./local-setup.sh
 python ./src/main.py
 ```
 
-![Quittance Pro 2023 screenshot](docs/screenshot.png)
+![Quittance Pro 2023 screenshot](docs/screenshot_2.png)
