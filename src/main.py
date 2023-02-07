@@ -8,12 +8,22 @@ from datamodel import DataModel
 
 
 def main():
-    print()
-    print("          ╔══════════════════════════╗")
-    print("          ║                          ║")
-    print("          ║    Quittance Pro 2023    ║")
-    print("          ║                          ║")
-    print("          ╚══════════════════════════╝")
+    RESET = "\x1B[0m"
+    CLREOL = "\x1B[K" # Needed to continue background color to the end of the line
+    color = "\x1b[{bg};2;{red};{green};{blue}m"
+
+    bg_blue = color.format(bg=48, red=1, green=0, blue=177)
+    bg_black = color.format(bg=48, red=0, green=0, blue=0)
+    bg_grey = color.format(bg=48, red=163, green=154, blue=162)
+    fg_white = color.format(bg=38, red=255, green=255, blue=255)
+
+    print(f"{fg_white}{bg_blue}{CLREOL}")
+    print(f"          {bg_grey}╔══════════════════════════╗{bg_blue}")
+    print(f"          {bg_grey}║                          ║{bg_blue}{bg_black} {bg_blue}")
+    print(f"          {bg_grey}║    Quittance Pro 2023    ║{bg_blue}{bg_black} {bg_blue}")
+    print(f"          {bg_grey}║                          ║{bg_blue}{bg_black} {bg_blue}")
+    print(f"          {bg_grey}╚══════════════════════════╝{bg_blue}{bg_black} {bg_blue}")
+    print(f"           {bg_black}                            {bg_blue}")
     print()
     print("        Copyright (c) 2023 Pierre Faivre")
     print()
@@ -27,10 +37,12 @@ def main():
     except FileNotFoundError as ex:
         print(f"Please provide the file {ex.filename}", file=sys.stderr)
         print()
+        print("\x1B[0m\x1B[K")
         exit(1)
     except json.decoder.JSONDecodeError as ex:
         print(f"The file {f.name} is malformed: {ex}", file=sys.stderr)
         print()
+        print("\x1B[0m\x1B[K")
         exit(1)
 
     try:
@@ -39,6 +51,7 @@ def main():
         print("The file data.json contains errors:")
         print(ex, file=sys.stderr)
         print()
+        print("\x1B[0m\x1B[K")
         exit(1)
 
     print(f"   Landlord............: {d.landlord.first_name} {d.landlord.last_name}")
@@ -75,6 +88,7 @@ def main():
     print()
     print("   Done.")
     print()
+    print("\x1B[0m\x1B[K")
 
 
 if __name__ == "__main__":
