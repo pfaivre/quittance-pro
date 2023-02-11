@@ -4,7 +4,7 @@
 
 ## 1. Set-up and run
 
-Provide the data in a file named data.json (see data_sample.json).
+Provide the data in a file named `data.json` (see data_sample.json).
 
 Then run
 ```sh
