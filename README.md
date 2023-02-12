@@ -14,3 +14,7 @@ python ./src/main.py
 ```
 
 ![Quittance Pro 2023 screenshot](docs/screenshot_2.png)
+
+## Future
+
+Next features of the program are detailed [here](docs/quittance-pro-next.md).
